@@ -1,0 +1,43 @@
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 999;
+}
+
+.navbar-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    list-style: none;
+    background-color: var(--burnt-orange);
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--dusty-turquoise);
+    font-size: 2rem;
+}
+
+.navbar-links a:hover {
+    color: white;
+}
+
+/*=================
+    ** MOBILE **
+==================*/
+
+@media screen and (max-width: 839px) {
+    /* Styles for screens smaller than 840px */
+    .navbar-links ul{
+        display:block;
+        padding:0;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,12 @@
+iframe{
+    margin:10rem auto 2rem;
+    height: 70vh;
+}
+
+body{
+    background-color: rgb(37, 33, 33);
+}
+
+footer{
+    margin-top:7rem;
+}

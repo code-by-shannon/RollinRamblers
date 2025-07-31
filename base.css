@@ -1,0 +1,16 @@
+:root {
+    --brown: #5e2b08;
+    --cream: #FAEBD7;
+    --burnt-orange: #b65814;
+    --dusty-turquoise: #54b9b9;
+    --danger-red: #A52A2A;
+  }
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Raleway, sans-serif;
+    color: var(--cream);
+}
+

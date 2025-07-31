@@ -1,0 +1,59 @@
+/*==============
+ ** FOOTER **
+===============*/
+
+footer {
+    background-color: var(--burnt-orange);
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+  }
+  
+footer h3 {
+    text-align: center;
+    color: var(--cream);
+    margin-bottom: 2rem;
+  }
+  
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+footer a{
+    text-decoration: none;
+  }
+  
+footer .fab {
+    color: var(--dusty-turquoise);
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+  }
+  
+footer .fab:hover {
+    color: var(--cream);
+    text-shadow: 0 0 5px var(--burnt-orange), 0 0 10px var(--dusty-turquoise);
+    transform: scale(1.1);
+  }
+  
+footer .store img {
+    width: 50%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    max-width: 500px;
+}
+
+#fine-print{
+    margin: 1rem auto 5rem;
+    text-align: center;
+}
+
+#fine-print a{
+    text-decoration: none;
+}
+
+p{
+  margin-top:2rem;
+  text-align: center;
+}
+  

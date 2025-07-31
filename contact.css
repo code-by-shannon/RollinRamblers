@@ -1,0 +1,253 @@
+/*==========
+** MOBILE **
+===========*/
+
+body{
+    background-color: var(--burnt-orange);
+    color:var(--dusty-turquoise);
+    text-align: center;
+    max-width:500px;
+    margin:0 auto;
+
+    position:relative;
+    z-index: 1;
+}
+
+/* background image layer */
+body:before{
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-image: url('imgs/lasso.png');
+    /* background-size: cover;
+    background-position: center; */
+    opacity:0.3;
+    z-index: -1;
+    pointer-events:none;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.navbar-links ul {
+    display: block;
+    padding: 0;
+    margin: 5rem auto;
+    list-style: none;
+    background-color: transparent;
+}
+
+
+hr{
+    background-color:var(--brown);
+    border:none;
+    height:2px;
+    width:90%;
+    margin:auto;
+}
+
+p{
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+
+h1{
+    margin-top:10rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    margin-top:2rem;
+}
+
+h1, h2, p{
+    text-shadow: .5px .5px .5px black;
+}
+
+/*================
+    ** FORM **
+=================*/
+
+#contact-form{
+    border:dashed 2px red;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:40vh;
+
+    border:solid 1px var(--dusty-turquoise);
+    border-radius:4px;
+    max-width:70%;
+    margin:auto;
+    padding:0;
+    background-color: var(--brown);
+}
+
+#contact-form input{
+    height:2rem;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width:90%;
+    margin:auto;
+    padding:5px;
+
+    color:black;
+    font-size: 1.2rem;
+    background-color: var(--cream);
+    border-radius: 4px;
+    
+    border: 2px solid var(--dusty-turquoise);
+    box-shadow: .5px .5px .5px var(--cream);
+}
+
+button {
+    background: black;
+    color: var(--dusty-turquoise);
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width:80%;
+    margin:auto;
+    box-shadow:.5px .5px .5px var(--dusty-turquoise);
+  
+    text-shadow:
+      0 0 5px var(--dusty-turquoise),
+      0 0 10px var(--dusty-turquoise),
+      0 0 20px var(--dusty-turquoise),
+      0 0 40px var(--dusty-turquoise);
+  
+    transition: all 0.3s ease-in-out;
+}
+  
+#bookingPhoto{
+    width:350px;
+    margin-top:2rem;
+    border-radius: 8px;
+    box-shadow: .5px .5px 2px 2px var(--dusty-turquoise);
+}
+
+#contact-photo{
+    margin-bottom:5rem;
+}
+
+/*=============================
+    **STAGE PLOT AND RATES**
+===============================*/
+
+/*STAGE PLOT */
+
+.stage-plot {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* Center all child rows */
+    margin: 2rem 0;
+  }
+  
+  .plot-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .position {
+    padding: 1rem;
+    background-color: #fff;
+    color: var(--burnt-orange);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    text-align: center;
+  }
+  
+
+.position strong{
+    color:var(--burnt-orange);
+}
+
+/*RATES*/
+
+.rates {
+    background: var(--cream);
+    color:var(--burnt-orange);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    border: 1px dashed #b65814;
+}
+
+.rates ul {
+    list-style: none;
+    padding: 0;
+    color:var(--burnt-orange);
+  
+}
+  
+.rates li {
+    margin-bottom: 0.8rem;
+    color:var(--burnt-orange);
+}
+
+.rates strong{
+    color:var(--burnt-orange);
+}
+
+.rates p{
+    color:var(--burnt-orange);
+}
+
+
+
+/*======================
+    ** MEDIA QUERIES **
+========================*/
+
+/* 1250 and below */
+@media screen and (max-width: 1250px) {
+    /* Styles for medium-to-large screens go here */
+    body{
+        max-width: 800px;
+    }
+
+    #contact-form{
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+/*=================
+    ** MOBILE **
+==================*/
+
+@media screen and (max-width: 839px) {
+   
+    body{
+        width:100%;
+    }
+
+    .plot-row {
+        transform: scale(0.66);
+        transform-origin: top center;
+    }
+
+    #contact-form{
+        height:60vh;
+    }
+}
+
+
+
+

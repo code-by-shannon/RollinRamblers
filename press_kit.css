@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Raleway, sans-serif;
+}
+
+body{
+    background-color: var(--brown);
+    text-align: center;
+    color:var(--burnt-orange);
+    text-shadow: .5px .5px .5px var(--dusty-turquoise);
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 
+      0 0 2px var(--cream), 
+      0 0 4px var(--dusty-turquoise),
+      0 0 6px var(--dusty-turquoise);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 
+      0 0 6px var(--cream), 
+      0 0 12px var(--dusty-turquoise),
+      0 0 18px var(--burnt-orange);
+    transform: scale(1.02);
+  }
+  100% {
+    text-shadow: 
+      0 0 2px var(--cream), 
+      0 0 4px var(--dusty-turquoise),
+      0 0 6px var(--dusty-turquoise);
+    transform: scale(1);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: var(--dusty-turquoise);
+  text-shadow: .5px .5px .5px var(--cream);
+  font-size: 4rem;
+  margin-top: 8rem;
+  animation: pulse 3s ease-in-out 0s 2;
+}
+
+
+/*=======
+  **BIO**
+=========*/
+
+#bio{
+  color:var(--cream);
+  text-shadow: .5px .5px .5px black;
+  margin:8rem auto;
+  width:80%;
+}
+
+#bio h2{
+  font-size: 1.8rem;
+  margin-bottom:1rem;
+}
+
+#bio p{
+  font-size: 1.5rem;
+}
+
+figcaption{
+    padding:2rem;
+}
+
+/*=====================
+     PHOTO GALLERY 
+=====================*/
+#photo-gallery{
+    display:flex;
+    justify-content: space-around;
+    color:black;
+    text-shadow: .5px .5px .5px var(--burnt-orange);
+}
+
+#photo-gallery figure{
+    width:500px;
+    object-fit: contain;
+    max-width:500px;
+    background-color: var(--cream);
+    border:5px solid var(--cream);
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#photo-gallery img{
+  width:100%;
+}
+
+figcaption{
+  font-size:1.5rem;
+  color:var(--dusty-turquoise);
+}
+
+#photo-gallery figure:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*==================
+  ** CAPABILITIES **
+==================*/
+
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, var(--burnt-orange), var(--cream), var(--burnt-orange));
+  margin: 5rem auto;
+  width: 60%;
+  border-radius: 2px;
+}
+
+
+#capabilities {
+  margin: 2rem auto;
+  color: var(--cream);
+  font-size: 1.5rem;
+  border: solid 2px var(--dusty-turquoise);
+  border-radius: 8px;
+  width: 50%;
+  padding: 1.5rem;
+  background-color: rgba(34, 17, 6, 0.2); 
+
+  text-shadow:
+    0 0 .5px var(--dusty-turquoise),
+    0 0 .5px var(--dusty-turquoise),
+    0 0 2px var(--dusty-turquoise),
+    0 0 4px var(--dusty-turquoise);
+  box-shadow:
+    0 0 5px var(--dusty-turquoise),
+    0 0 10px var(--dusty-turquoise),
+    0 0 20px var(--dusty-turquoise);
+}
+
+
+#capabilities ul {
+  list-style: none;
+  padding-left: 0;
+  font-size:2rem;
+  text-align: left;
+}
+
+#capabilities li{
+  font-size: 1.5rem;
+}
+
+#capabilities li:first-child{
+  margin-top: 1rem;;
+}
+
+/*===================
+  ** ASIDE TRIVIA **
+====================*/
+
+aside{
+  color:var(--cream);
+  margin:5rem auto 5rem;
+  width:70%;
+}
+
+aside h3{
+  font-size: 2.5rem;
+}
+
+aside p{
+  font-size: 1.5rem;
+}
+
+aside span{
+  color:var(--dusty-turquoise);
+  text-shadow: .5px .5px .5px var(--cream);
+}
+
+/*===================== 
+    **Table Styling**    
+=======================*/
+#setlist h2{
+  color: var(--cream);
+  text-shadow: .5px .5px .5px black;
+  margin: 5rem auto 2rem;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: floralwhite;
+    color: black;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color:black;
+  }
+  
+  th {
+    background-color: var(--dusty-turquoise);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  
+  th:hover {
+    background-color: #d2b48c;
+  }
+  
+  /* Optional arrow indicators on hover */
+  th::after {
+    content: " ⇅";
+    font-size: 0.75rem;
+    color: black;
+    position: absolute;
+    right: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--cream);
+  }
+
+/*============
+  ** VIDEOS **
+=============*/
+
+#video h4{
+  margin-bottom:1rem;
+}
+
+#video{
+    display: flex;
+    flex-direction: column;
+    margin-top:8rem;
+    font-size: 2rem;
+    color:var(--cream);
+    text-shadow: .5px .5px 5px var(--dusty-turquoise);
+}
+
+.videos{
+  display: flex;
+  gap:2rem;
+  justify-content: center;
+}
+
+.player{
+  box-shadow: 0px 0px 5px 2px var(--dusty-turquoise);
+}
+
+/*=======================
+  ** FREE ROLLIN MAN TUNE
+========================*/
+
+#free_rollin_man{
+  color:var(--dusty-turquoise);
+  text-shadow: .5px .5px 5px var(black);
+}
+
+#free_rollin_man h2{
+  margin-bottom:1.2rem;
+}
+
+/*==========    
+**SPOTIFY**
+===========*/
+
+#spotify{
+    margin-top:2rem;
+}
+
+#spotify a{
+  color:var(--dusty-turquoise);
+  text-decoration: none;
+}
+
+#spotify a:hover{
+  color:var(--danger-red);
+}
+
+/*==================
+  ** GARAGE MAHAL **
+===================*/
+
+#garage_mahal h2{
+  margin-bottom: 1rem;
+}
+
+#garage_mahal{
+    margin-top:8rem;
+    color:var(--cream);
+}
+
+#garage_mahal figcaption{
+  margin-top:-2rem;
+}
+
+/*===================
+  ** PRESS QUOTES **
+====================*/
+#press_quotes h2{
+  font-size: 2.5rem;
+}
+
+
+#press_quotes{
+  margin:2rem auto;
+  border:solid 3px var(--burnt-orange);
+  padding:1rem;
+  color:var(--cream);
+  width:80%;
+  border-radius:8px;
+  background-color: rgba(34, 17, 6, 0.2);
+}
+
+#press_quotes span{
+  color:var(--dusty-turquoise);
+}
+
+#press_quotes blockquote{
+  font-size:1.2rem;
+  padding:1rem;
+}
+
+/*=============
+  **BOOKING**
+==============*/
+
+#booking{
+  margin:10rem auto;
+  color:var(--dusty-turquoise);
+  background-color: rgba(34, 17, 6, 0.2);
+  width:40%;
+  border:solid 2px  var(--dusty-turquoise);
+  border-radius: 8px;
+  padding:2rem;
+  font-size: 2.2rem;
+}
+
+#booking a{
+  color:var(--dusty-turquoise);
+  text-decoration: none;
+}
+
+#booking a:hover{
+  color:var(--danger-red);
+}
+
+#booking p{
+  font-size: 2rem;
+  color:var(--dusty-turquoise);
+}
+
+/*=============
+  ** shannon **
+==============*/
+
+#shannon{
+  margin-bottom:8rem;
+}
+
+#shannon a{
+  color:var(--cream);
+  text-decoration: none;
+}
+
+#shannon a:hover{
+  color:var(--danger-red);
+}
+
+
+/*=================
+** MEDIA QUERIES **
+==================*/
+
+/* 1250 and below */
+@media screen and (max-width: 1250px) {
+  /* Styles for medium-to-large screens go here */
+  #bio{
+    width:90%;
+  }
+
+  #photo-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1rem;
+    color:black;
+  }
+
+  #capabilities{
+    width:90%;
+  }
+
+  table {
+    width: 90%;
+  }
+
+  #booking{
+    width:80%;
+  }
+}
+
+/*=============
+  ** MOBILE **
+===============*/
+
+@media screen and (max-width: 839px) {
+
+  #garage_mahal iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* modern browsers only */
+    max-width: 100%;
+    border: none;
+  }
+  
+  .videos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #booking{
+    width:90%;
+  }
+
+  #booking a{
+    font-size: 1.4rem;
+  }
+
+  aside{
+    width:70%;
+  }
+}
+
+
+

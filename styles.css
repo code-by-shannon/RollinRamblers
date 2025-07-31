@@ -1,0 +1,147 @@
+/* Large screens (ultrawide, 2K+) */
+
+*{
+    font-family: "Raleway", serif;
+    color:rgb(237, 230, 17);
+}
+
+body{
+    background-image: url('imgs/star.jpg');
+    text-shadow:1px 1px 5px floralwhite;
+}
+
+body,
+html{
+    height:100%;
+    margin:0;
+}
+
+
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin-top:5rem;
+
+}
+
+.gun img{
+    width:50%;
+    border-radius:10px;
+    display:block;
+    margin:3rem auto;
+    box-shadow:1px 1px 5px floralwhite;
+}
+
+.wolf{
+    width:15%;
+    align-self: flex-end;
+    margin-top:2rem;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1, p {
+    animation: fadeIn 4s ease-out;
+  }
+
+
+  
+  /* Desktop (standard monitors) */
+  @media only screen and (min-width: 1280px) and (max-width: 1599px) {
+    /* Styles for desktops and standard monitors */
+    #container{
+        width:70%;
+        margin:auto;
+    }
+
+    .wolf{
+        width:20%;
+    }
+  }
+  
+  /* Tablet (landscape) and small laptops */
+  @media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    /* Styles for tablets in landscape or small laptops */
+    #container{
+        width:50%;
+        margin:auto;
+    }
+
+    .gun img{
+        width:100%;
+        text-align: center;
+    }
+
+    .wolf{
+        width:20%;
+    }
+  }
+  
+  /* Tablet (portrait) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in portrait */
+    #container{
+        width:60%;
+        margin:auto;
+    }
+
+    .gun img{
+        width:100%;
+    }
+
+    .wolf{
+        width:20%;
+    }
+  }
+  
+  /* Mobile (most smartphones) */
+  @media only screen and (max-width: 767px) {
+    /* Styles for standard mobile phones */
+    #container{
+        width:80%;
+        margin: 2rem auto;
+    }
+
+    h1,
+    p{
+        width: 80%;
+        margin:auto;
+    }
+
+    .gun img{
+        display: block;
+        width:100%;
+    }
+
+    .wolf{
+        width:35%;
+    }
+  }
+  
+  /* Mobile (small phones) */
+  @media only screen and (max-width: 480px) {
+    /* Styles for very small devices */
+  }
+  
+  
+ 
+  
+
+
+  
+
+
+

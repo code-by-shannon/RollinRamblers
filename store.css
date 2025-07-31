@@ -1,0 +1,87 @@
+.store {
+    background-color: var(--cream);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 4rem auto;
+    color: var(--brown);
+    text-align: center;
+  }
+  
+  .store h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: var(--burnt-orange);
+    text-shadow: 1px 1px var(--dusty-turquoise);
+    font-family: 'Kalam', cursive;
+  }
+  
+  .store .item {
+    background-color: var(--brown);
+    color: var(--cream);
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+  }
+  
+  .store .item:hover {
+    transform: scale(1.01);
+  }
+  
+  .store img {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .store p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--dusty-turquoise);
+  }
+  
+  .store label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: var(--cream);
+  }
+  
+  .store select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--dusty-turquoise);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: var(--cream);
+    color: var(--brown);
+  }
+  
+  .store input[type="image"] {
+    margin-top: 1rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+  
+  .store input[type="image"]:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+  
+  .store .cart {
+    margin-top: 3rem;
+  }
+
+  #fine-print{
+    color:black;
+  }
+
+  #fine-print a{
+    color:black;
+  }
+  

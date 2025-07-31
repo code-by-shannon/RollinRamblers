@@ -1,0 +1,233 @@
+:root {
+    --brown: #5e2b08;
+    --cream: #FAEBD7;
+    --burnt-orange: #b65814;
+    --dusty-turquoise: #54b9b9;
+    --danger-red: #A52A2A;
+  }
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Raleway, sans-serif;
+    color: var(--cream);
+}
+
+body{
+    background-color: var(--brown);
+    width: 100%;
+    text-shadow:2px 2px black;
+    margin-top:180px;
+}
+
+/*======================
+ ** VIDEO HERO SECTION**
+========================*/
+
+.top-video-container {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+  
+.top-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+  
+
+hr{
+    border:none;
+    height:2px;
+    background-color: var(--burnt-orange);
+    width:50%;
+    margin:10rem auto 8rem;
+}
+
+/* =======
+ ** H1 ** 
+========= */
+  
+h1 {
+    color:var(--cream);
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Kalam", cursive;
+    text-shadow: 1px 1px 1px black;
+    margin-top:25rem;
+    margin-bottom:25rem;
+}
+
+h2,
+h3,
+#gignag{
+    text-align: center;
+}
+
+h3{
+    padding-top:2rem;
+}
+
+/* ===============
+** HERO SECTION **
+=================*/
+
+.header{
+    display:flex;
+    width:100%;
+    text-align: center;
+    margin-top:1rem;
+    padding:2rem;
+    background-color: var(--burnt-orange);
+}
+
+#hero-image {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:2rem;
+}
+
+#bio-title{
+    font-size:2rem;
+    color:var(--dusty-turquoise);
+}
+
+.biography p {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    color:var(--cream);
+    line-height: 1.2;
+    padding:2rem;
+}
+
+/*=================
+** PHOTO GALLERY **
+==================*/
+
+#photo-gallery-heading{
+    color:var(--dusty-turquoise);
+    margin-top:3rem;
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    gap:16px;
+    max-width:1400px;
+    margin: -1rem auto;
+    padding:20px 10px;
+}
+
+.gallery img{
+    width:100%;
+    max-width:400px;
+    height:450px;
+    object-fit:cover;
+    box-shadow:1px 1px 1px bisque;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+}
+
+#ari{
+    object-fit: contain;
+    background-color:rgb(53, 23, 23);
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    flex: 0 1 auto;
+    border:solid 2px var(--burnt-orange);
+    border-radius:4px;
+}
+  
+.flip-hint {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0.8;
+}
+  
+.card:hover .flip-hint {
+    opacity: 1;
+}
+
+
+/*======================
+    ** MEDIA QUERIES **
+========================*/
+
+/* 1250 and below */
+@media screen and (max-width: 1250px) {
+    /* Styles for medium-to-large screens go here */
+    .header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #hero-image{
+        margin:auto;
+    }
+
+    .biography p{
+        margin:0;
+        padding:0;
+    }
+}
+
+/*=================
+    ** MOBILE **
+==================*/
+
+@media screen and (max-width: 839px) {
+   
+    .biography{
+        width:100%;
+        margin: 2rem 0;
+        padding:0;
+    }
+}
+
+  
+  
+
+
+
+  
+
+   

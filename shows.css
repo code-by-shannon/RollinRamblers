@@ -1,0 +1,205 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:bisque;
+    color:black;
+}
+
+/*======================
+    **PHOTOS AND TITLE**
+=======================*/
+.title_and_photos{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:15rem;
+}
+
+.title_and_photos img{
+    width:150px;
+    height:150px;
+}
+
+h2{
+    color:var(--dusty-turquoise);
+    text-align: center;
+    text-shadow: .5px .5px .5px black;
+    font-size: 3rem;
+}
+
+
+/*============
+    **TABLE**
+==============*/
+
+/* TITLE */
+
+#content-table{
+  border:solid black 1px;
+  width:50%;
+  margin:auto;
+  box-shadow: 1px 1px 10px black;
+}
+
+#content-table th {
+    color:var(--cream);
+    background-color: var(--brown);
+    text-align: center;
+    font-weight: bold 1rem;
+    border-top: var(--dusty-turquoise) solid 1px;
+    padding:2rem;
+    font-size: 1.5rem;
+    text-shadow: .5px .5px .5px var(--dusty-turquoise);
+}
+
+td{
+    background-color:var(--burnt-orange);
+    color:var(--cream);
+    font-size:1.5rem;
+    text-shadow: .5px .5px .5px black;
+}
+
+tr:nth-of-type(even) td {
+    background-color: var(--cream); /* or whatever alt color you want */
+    color: var(--burnt-orange); /* or override the text color if needed */
+}
+
+#content-table th,
+#content-table td {
+    padding:12px 15px;
+}
+
+#content-table tbody tr:nth-of-type(even) {
+    background-color:rgb(85, 30, 30);
+    color:var(--burnt-orange);
+}
+
+#content-table tbody tr:last-of-type {
+    border-bottom:solid 2px white;
+}
+
+#booking{
+    color:white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#booking a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#booking a:hover{
+    color:gold;
+}
+
+#homepage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepage a{
+    padding:2rem;
+    color:var(--dusty-turquoise);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#homepage a:hover{
+    color:var(--danger-red);
+}
+
+#homepage img{
+    width:50px;
+    border-radius: 4px;
+} 
+
+#fine-print{
+    color:black;
+}
+
+#fine-print a{
+    color:black;
+}
+
+/*======================
+    ** MEDIA QUERIES **
+========================*/
+
+/* 1250 and below */
+@media screen and (max-width: 1250px) {
+    /* Styles for medium-to-large screens go here */
+   #content-table{
+    margin-top:2rem;
+    width:90%;
+   }
+}
+
+/*=================
+    ** MOBILE **
+==================*/
+
+@media screen and (max-width: 839px) {
+ 
+
+.gigpic{
+    display:none;
+}
+
+  #content-table,
+  #content-table thead,
+  #content-table tbody,
+  #content-table td,
+  #content-table tr {
+    display: block;
+    width: 100%;
+}
+
+#content-table tbody tr:nth-of-type(even) {
+    background-color: var(--cream); /* deep brown */
+  }
+
+#content-table tbody tr:first-child {
+    display: none;
+  }
+
+#content-table th{
+    display: none;
+}
+
+  #content-table thead {
+    display: none; /* hide column headers */
+}
+
+  #content-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--dusty-turquoise);
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: var(--burnt-orange);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+
+  #content-table td {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  #content-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    color: var(--cream);
+    margin-bottom: 0.25rem;
+  }
+
+  .title_and_photos{
+    margin-top:1rem;
+  }
+   
+}
+  
