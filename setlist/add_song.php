@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$dbname = 'rollin_ramblers_db'; // 👈 Change this to match your DB
+$dbname = 'rollin_ramblers_db';
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
