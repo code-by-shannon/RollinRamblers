@@ -108,9 +108,11 @@ include 'includes/db.php'; // or your db connect logic
     }
 
     function addSong(id, name, artist) {
-      sets[activeSet].push({ id, name, artist });
-      renderSelected();
-    }
+  sets[activeSet].push({ id, name, artist });
+  document.getElementById('songSearch').value = '';     // clear the input
+  document.getElementById('results').innerHTML = '';    // clear the search results
+  renderSelected();
+}
 
     function removeSong(index) {
       sets[activeSet].splice(index, 1);
