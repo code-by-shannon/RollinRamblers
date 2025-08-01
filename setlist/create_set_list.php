@@ -86,7 +86,7 @@ include 'includes/db.php'; // or your db connect logic
 
     function searchSongs() {
       const query = document.getElementById('songSearch').value;
-      if (query.length < 2) return document.getElementById('results').innerHTML = '';
+      if (query.length < 1) return document.getElementById('results').innerHTML = '';
       
       fetch(`search_songs.php?q=${encodeURIComponent(query)}`)
         .then(res => res.json())
