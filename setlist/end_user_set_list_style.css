@@ -1,0 +1,129 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: floralwhite;
+    color: black;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Titles */
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: black;
+  }
+  
+  /* Container Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  
+  /* General Cell Styling */
+  td {
+    display: block;
+    width: 100%;
+    background-color:rgb(240, 232, 216);
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+
+  
+  
+  /* Title + Artist */
+  td.title-artist {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  /* Key + BPM Row */
+  td.key-bpm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: black solid 1px;
+  }
+  
+  /* BPM Button */
+  .bpm-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    width: 7rem;      /* ← adjust this as needed */
+    height: 4.5rem;     /* ← same for vertical size */
+    font-size: 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0; /* clear padding to prevent overflow */
+  }
+  
+
+
+  
+  .bpm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Notes Section */
+  .notes-cell {
+    background-color: #f4f4f4;
+    font-style: italic;
+    border: 1px solid black;         /* NEW: Full border like key-bpm */
+    border-radius: 0 0 8px 8px;
+    font-size: 2rem !important;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
+
+  
+  
+  /* Responsive Boost */
+  @media (min-width: 600px) {
+    td {
+      font-size: 1.6rem;
+    }
+  
+    td.title-artist,
+    td.key-bpm {
+      font-size: 2.4rem;
+    }
+  
+    .notes-cell {
+      font-size: 2.4rem;
+    }
+  
+    .bpm-button {
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px black solid;
+    }
+  }
+  
