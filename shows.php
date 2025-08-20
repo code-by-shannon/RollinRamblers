@@ -27,6 +27,11 @@
         <td>Mothers Tavern, Huntington Beach, CA</td>
     </tr>
     <tr>
+        <td>9/27/25</td>
+        <td>Rollin' Ramblers Show</td>
+        <td>Regal Cocktails, Lakewood, CA</td>
+    </tr>
+    <tr>
         <td>9/5/25</td>
         <td>RR, Migs Whiskey, Chris Parties</td>
         <td>Regal Cocktails, Lakewood, CA</td>
