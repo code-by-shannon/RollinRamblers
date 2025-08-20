@@ -19,6 +19,7 @@ $gigs = [
   ["date" => "2025-07-25", "event" => "Rollin' Ramblers Show", "venue" => "Doll Hut, Anaheim, CA","map" => "https://maps.google.com/?q=Doll+Hut,+Anaheim,+CA"],
   ["date" => "2025-07-26", "event" => "Rollin' Ramblers Show", "venue" => "Elks Lodge, Norwalk, CA","map" => "https://maps.google.com/?q=Elks+Lodge,+Norwalk,+CA"],
   ["date" => "2025-08-09", "event" => "Rollin' Ramblers Show","venue" => "Regal Cocktails, Lakewood, CA","map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+  ["date" => "2025-09-27", "event" => "Rollin' Ramblers Show","venue" => "Regal Cocktails, Lakewood, CA","map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
   ["date" => "2025-09-28", "event" => "Rollin' Ramblers Show","venue" => "Mother's Tavern, Sunset Beach, CA","map" => "https://maps.google.com/?q=Mothers+Tavern,+Huntington Beach,+CA"]
 ];
 ?>
