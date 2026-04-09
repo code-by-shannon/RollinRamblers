@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('America/Los_Angeles');
+
 include 'gigs.php'; // this brings in the $gigs array
 
 $today = date("Y-m-d");

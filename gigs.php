@@ -1,4 +1,7 @@
 <?php
+
+date_default_timezone_set('America/Los_Angeles');
+
 $gigs = [
   ["date" => "2023-10-19", "event" => "Rollin' Ramblers Show", "venue" => "The Doll Hut, Anaheim"],
   ["date" => "2023-11-11", "event" => "Rollin' Ramblers Show", "venue" => "Mugs Away Saloon, Laguna Niguel"],
@@ -18,8 +21,76 @@ $gigs = [
   ["date" => "2025-06-27", "event" => "Rollin' Ramblers Show", "venue" => "Bancroft Bar, Spring Valley, CA"],
   ["date" => "2025-07-25", "event" => "Rollin' Ramblers Show", "venue" => "Doll Hut, Anaheim, CA","map" => "https://maps.google.com/?q=Doll+Hut,+Anaheim,+CA"],
   ["date" => "2025-07-26", "event" => "Rollin' Ramblers Show", "venue" => "Elks Lodge, Norwalk, CA","map" => "https://maps.google.com/?q=Elks+Lodge,+Norwalk,+CA"],
-  ["date" => "2025-08-09", "event" => "Rollin' Ramblers Show","venue" => "Regal Cocktails, Lakewood, CA","map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
-  ["date" => "2025-09-27", "event" => "Rollin' Ramblers Show","venue" => "Regal Cocktails, Lakewood, CA","map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
-  ["date" => "2025-09-28", "event" => "Rollin' Ramblers Show","venue" => "Mother's Tavern, Sunset Beach, CA","map" => "https://maps.google.com/?q=Mothers+Tavern,+Huntington Beach,+CA"]
+  
+  ["date" => "2025-08-09", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Regal Cocktails, Lakewood, CA",
+  "map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+
+  ["date" => "2025-08-21", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Venice, CA",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2025-09-27", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Regal Cocktails, Lakewood, CA",
+  "map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+
+  ["date" => "2025-09-28", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Mother's Tavern, Sunset Beach, CA",
+  "map" => "https://maps.google.com/?q=Mothers+Tavern,+Huntington Beach,+CA"],
+
+  ["date" => "2025-10-05", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Venice, CA",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2025-10-19", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Venice, CA",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2025-11-08", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Mother's Tavern, Sunset Beach, CA",
+  "map" => "https://maps.google.com/?q=Mothers+Tavern,+Huntington Beach,+CA"],
+
+  ["date" => "2025-12-07", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Venice, CA",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2025-12-21", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Venice, CA",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2026-01-17", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "The Brig, Las Vegas, NV",
+  "map" => "https://maps.google.com/?q=The+Brig,+Venice,+CA"],
+
+  ["date" => "2026-02-21", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Regal Cocktails, Lakewood, CA",
+  "map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+
+  ["date" => "2026-03-29", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Roar Room",
+  "map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+
+  ["date" => "2026-04-11", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Regal Cocktails, Lakewood, CA",
+  "map" => "https://maps.google.com/?q=Regal+Cocktails,+Lakewood,+CA"],
+
+  ["date" => "2026-04-11", 
+  "event" => "Rollin' Ramblers Show",
+  "venue" => "Mother's Tavern, Sunset Beach, CA",
+  "map" => "https://maps.google.com/?q=Mothers+Tavern"],
 ];
+
 ?>

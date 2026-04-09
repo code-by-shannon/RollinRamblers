@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('America/Los_Angeles');
+
 include 'db.php';
 $conn = connectToDB();
 
